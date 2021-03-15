@@ -38,6 +38,10 @@ header {
   background-color: black;
 }
 
+header .navbar a:hover {
+  font-weight: bold;
+}
+
 .logo a {
   color: white;
 }
