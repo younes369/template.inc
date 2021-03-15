@@ -8,13 +8,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   font-family: "Poppins", sans-serif;
   color: rgb(170, 170, 170);
   background-color: var(--light-color);
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 a {
   text-decoration: none;
@@ -31,16 +31,31 @@ li {
 .ma {
   margin: auto;
 }
-.header {
+
+header {
+  max-height: 10vh;
+  min-height: 10vh;
   background-color: black;
 }
+
+.logo a {
+  color: white;
+}
+
+.logo a span {
+  color: var(--primary-color);
+}
+
+.middle {
+  max-height: 80vh;
+  min-height: 80vh;
+}
+
+footer {
+  max-height: 10vh;
+  min-height: 10vh;
+}
+
 .maxw {
   max-width: 1400px;
 }
-
-
-
-
-
-
-

@@ -4,61 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shargeya</title>
-    <link rel="stylesheet" href="css/main.css?v=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/utillities.css" />
   </head>
-
   <body>
-    <div class="navbar">
-      <div class="container">
-        <a href="#" class="logo">Template<span>.inc</span> </a>
-
-        <nav>
+    <header class="header">
+      <div class="container maxw">
+        <div class="logo">
+          <h1>
+            <a href="./index.html">template<span>.store</span></a>
+          </h1>
+        </div>
+        <div class="navbar">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="customers/index.html">Customers</a></li>
-            <li><a href="products/index.html">Products</a></li>
-            <li><a href="#">Reciepts</a></li>
+            <li><a class="navlink" href="../index.html">Home</a></li>
+            <li>
+              <a class="navlink" href="../customers/index.html">Customers</a>
+            </li>
+            <li><a class="navlink" href="#">Products</a></li>
+            <li><a class="navlink" href="#">Receipt</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <section class="main-menu">
+    <section class="middle maxw ma">
       <div class="container">
-        <ul class="options">
-          <li id="customers">
-            <img
-              src="./assets/svgs/raw svgs/iconmonstr-picture-10.svg"
-              alt="test"
-              class="icon"
-            />
-            <h4>Customers</h4>
-          </li>
-          <li id="products">
-            <img
-              src="./assets/svgs/raw svgs/iconmonstr-product-14.svg"
-              alt="test"
-              class="icon"
-            />
-            <h4>Products</h4>
-          </li>
-          <li id="receipts">
-            <img
-              src="./assets/svgs/raw svgs/iconmonstr-coin-2.svg"
-              alt="test"
-              class="icon"
-            />
-            <h4>Receipts</h4>
-          </li>
-        </ul>
+        <a href="./customers/index.html">
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/homepage/customersIcon.svg" alt="customers" />
+            </div>
+            <div class="text">
+              <h2>Customers</h2>
+            </div>
+          </div>
+        </a>
+        <a href="./products/index.html">
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/homepage/productIcon.svg" alt="products" />
+            </div>
+            <div class="text">
+              <h2>Product</h2>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/homepage/coinIcon.svg" alt="receipts" />
+            </div>
+            <div class="text">
+              <h2>Receipts</h2>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <a href="#" class="logo">Template<span>.inc</span></a>
-        <h5>Copyright 2021</h5>
+    <footer class="footer">
+      <div class="ma maxw container">
+        <div class="logo">
+          <h1>
+            <a href="./index.html">template<span>.store</span></a>
+          </h1>
+        </div>
+        <div class="copyrightText">
+          <h3>Copyright 2021</h3>
+        </div>
       </div>
     </footer>
   </body>
