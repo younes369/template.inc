@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+/*header*/
+.container {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navlink {
+  color: var(--primary-color);
+  padding-left: 50px;
+}
+
+/*page identification area*/
+.idp {
+  align-content: center;
+  height: 130px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: block;
+  justify-items: center;
+  height: 100%;
+  width: 90%;
+}
+
+.icon img {
+  width: 250px;
+}
+
+.search {
+  bottom: 30%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+}
+
+.search button {
+  width: 60px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--secondary-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.search input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 170px;
+  height: 30px;
+  padding: 10px;
+}
+
+/*hero/products area*/
+.hero {
+  align-content: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.product {
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 30px 30px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 10px;
+  overflow: visible;
+}
+
+.main-img img {
+  width: 250px;
+  max-height: 200px;
+  border-radius: 8px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  image-resolution: inherit;
+}
+
+.text {
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+}
+
+.remove {
+  display: none;
+  position: absolute;
+  right: 290px;
+  bottom: 280px;
+  background-color: red;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.remove img {
+  width: 30px;
+  margin: 2.5px 2.5px;
+}
+
+/*footer*/
+.footer {
+  background-color: black;
+  margin-top: 30px;
+}
+
+/*hover*/
+.product:hover span {
+  display: grid;
+}
+
+.product:hover {
+  transform: scale(0.98);
+}/*# sourceMappingURL=main.css.map */
