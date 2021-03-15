@@ -1,133 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-:root {
-  --primary-color: rgb(87, 115, 209);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  background: #F2F2F2;
-  font-family: 'Poppins';
-  font-size: x-large;
-  min-height: 100%;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  color: #444444;
-}
-
-.logo {
-  text-decoration: none;
-  color: white;
-  font-size: xx-large;
-  margin-top: 0.5em;
-  margin-left: 4em;
-}
-
-.logo span {
-  color: var(--primary-color);
-}
-
-.navbar {
-  background-color: black;
-  height: 12vh;
-}
-
-.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+/*general*/
+.container {
+  padding: 10px 50px;
   display: flex;
-  place-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
-.navbar nav {
-  margin-right: 2em;
-  margin-top: 1em;
-}
-
-.navbar nav a {
-  text-decoration: none;
-  font-weight: 400;
-  color: var(--primary-color);
-}
-
-.navbar nav li {
-  display: inline;
-  margin-right: 2em;
-}
-
-.navbar nav a:hover {
-  font-weight: 600;
-}
-
-.main-menu {
-  height: 75vh;
-}
-
-.main-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*header*/
+.header .container .navbar ul {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+.header .container .navbar ul .navlink {
+  color: var(--primary-color);
+  padding-left: 50px;
 }
 
-.main-menu ul li {
-  background-color: #ffffff;
-  margin: 3em;
-  padding: 3em 2em;
-  border-radius: 1em;
+/*middle*/
+.middle {
+  min-height: 80vh;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.middle .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  width: 80%;
+}
+.middle .container .card {
   cursor: pointer;
+  height: 50vh;
+  background-color: white;
+  border-radius: 24px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.middle .container .card .icon {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.middle .container .card .icon img {
+  width: 100%;
+}
+.middle .container .card .text {
+  align-items: center;
+  justify-content: center;
+}
+.middle .container .card:hover {
+  transform: scale(0.95);
 }
 
-.main-menu ul li .icon {
-  margin-left: 1em;
-  height: 100px;
-}
-
-.main-menu ul li h4 {
-  margin-top: 1em;
-  font-weight: 400;
-}
-
-.main-menu ul li:hover {
-  margin-top: 5%;
-}
-
-footer {
-  height: 13vh;
+/*footer*/
+.footer {
   background-color: black;
-}
-
-footer h5 {
-  color: white;
-  margin-right: 2em;
-  margin-top: 1em;
-}
-
-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-}
-<<<<<<< HEAD:public/css/main.css
-/*# sourceMappingURL=main.css.map */
-=======
-/*# sourceMappingURL=main.css.map */
->>>>>>> 8647f4346aba4d04ca625e7565b75c2b8b70589f:css/main.css
+  /*   margin-top: 30px;
+  */
+}/*# sourceMappingURL=main.css.map */
