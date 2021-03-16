@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customers | customer</title>
+    <link rel="stylesheet" href="../../css/utillities.css" />
+    <link rel="stylesheet" href="./css/customer.css" />
+  </head>
+  <body>
+    <%- include('../../partials/header'); %>
+
+    <section class="middle">
+      <div class="idp maxw">
+        <span class="icon">
+          <a href="/customers/"
+            ><img src="../../assets/svgs/customers.svg" alt="customers" />
+          </a>
+        </span>
+        <div class="search">
+          <input type="text" placeholder="Search.." /><button>search</button>
+        </div>
+      </div>
+      <div class="container maxw ma">
+        <div class="customer">
+          <span class="remove">
+            <img src="../../assets/svgs/remove.svg" alt="" />
+          </span>
+          <div class="main-img">
+            <img
+              src="../../assets/Iván_el_Terrible_y_su_hijo,_por_Iliá_Repin.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h3><a href="#">customer name</a></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <h3>customer name:</h3>
+            <h3></h3>
+            <h3>customer ID:</h3>
+            <h3></h3>
+            <h3>customer contact info:</h3>
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+      <div class="w">
+        <h4>items bought by the customer:</h4>
+      </div>
+      <table>
+        <tr>
+          <th>ID:</th>
+          <th>Product</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td><a href="#">51485</a></td>
+          <td><a href="#"></a>peter griffin</td>
+          <td>
+            <a href="#"></a>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Tempora sapiente impedit nam? Voluptatem, eos dolores!
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">51485</a></td>
+          <td><a href="#"></a>peter griffin</td>
+          <td>
+            <a href="#"></a>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Tempora sapiente impedit nam? Voluptatem, eos dolores!
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">51485</a></td>
+          <td><a href="#"></a>peter griffin</td>
+          <td>
+            <a href="#"></a>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Tempora sapiente impedit nam? Voluptatem, eos dolores!
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">51485</a></td>
+          <td><a href="#"></a>peter griffin</td>
+          <td>
+            <a href="#"></a>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Tempora sapiente impedit nam? Voluptatem, eos dolores!
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <%-include('../../partials/footer'); %>
+  </body>
+</html>

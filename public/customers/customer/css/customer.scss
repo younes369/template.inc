@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+:root {
+  --primary-color: #6b6bff;
+  --secondary-color: #19197b;
+  --light-color: #f2f2f2;
+  --table-primary-color: #172a3a;
+  --table-secondary-color: #9ecaa3;
+}
+/*page identification area*/
+.idp {
+  align-content: center;
+  height: 130px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.icon {
+  display: block;
+  justify-items: center;
+  height: 100%;
+  width: 90%;
+}
+.icon img {
+  width: 270px;
+}
+.search {
+  bottom: 30%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+}
+.search button {
+  width: 60px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--secondary-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+.search input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 170px;
+  height: 30px;
+  padding: 10px;
+}
+
+/*card*/
+.middle {
+  .container {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    .customer {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-rows: 70% 20%;
+      grid-template-columns: repeat(1, 100%);
+      row-gap: 10%;
+      padding: 6% 10px;
+      min-height: 100%;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      overflow: visible;
+
+      .main-img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 90%;
+          max-height: 100%;
+          border-radius: 10px;
+          object-fit: scale-down;
+          object-position: 50% 50%;
+          image-resolution: inherit;
+        }
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-content: center;
+        align-content: center;
+        a {
+          font-size: 1rem;
+        }
+      }
+      .remove {
+        display: none;
+        position: absolute;
+        right: 290px;
+        bottom: 280px;
+        background-color: red;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        justify-content: center;
+        cursor: pointer;
+
+        .remove img {
+          width: 30px;
+          margin: 2.5px 2.5px;
+        }
+      }
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 2% 5%;
+      background-color: white;
+      border-radius: 10px;
+      height: 100%;
+      .info {
+        color: black;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+      }
+    }
+  }
+  .w {
+    width: 1400px;
+    margin: 50px 50px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: thin;
+    color: var(--secondary-color);
+  }
+  table {
+    width: 1400px;
+    margin: 40px 50px;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px rgb(168, 168, 168),
+      -5px -5px 10px rgb(168, 168, 168);
+
+    tr:nth-child(even) {
+      background-color: var(--table-secondary-color);
+    }
+    tr {
+      height: 50px;
+    }
+    th {
+      height: auto;
+      background-color: var(--table-primary-color);
+      color: white;
+    }
+    td {
+      height: auto;
+      text-align: center;
+      color: black;
+    }
+    th,
+    td {
+      border: none;
+    }
+  }
+}
+
+/*footer*/
+.footer {
+  background-color: black;
+  margin-top: 30px;
+}
+
+/*hover*/

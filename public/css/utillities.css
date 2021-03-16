@@ -32,6 +32,16 @@ li {
   margin: auto;
 }
 
+/*general*/
+.container {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/*header*/
 header {
   max-height: 10vh;
   min-height: 10vh;
@@ -40,6 +50,14 @@ header {
 
 header .navbar a:hover {
   font-weight: bold;
+}
+
+.header .container .navbar ul {
+  display: flex;
+}
+.header .container .navbar ul .navlink {
+  color: var(--primary-color);
+  padding-left: 50px;
 }
 
 .logo a {
@@ -51,7 +69,6 @@ header .navbar a:hover {
 }
 
 .middle {
-  max-height: 80vh;
   min-height: 80vh;
 }
 
@@ -62,4 +79,9 @@ footer {
 
 .maxw {
   max-width: 1400px;
+}
+
+/*footer*/
+.footer {
+  background-color: black;
 }
