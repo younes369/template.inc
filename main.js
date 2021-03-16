@@ -6,22 +6,22 @@ app.set("views", "./public");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("index.ejs");
 })
 
 app.get("/customers/", (req, res) => {
-    res.render("customers/index");
+    res.render("customers/index.ejs");
 })
 
 app.get("/customers/customer/", (req, res) => {
-    res.render("customers/customer/customer");
+    res.render("customers/customer/customer.ejs");
 })
 
 app.get("/products/", (req, res) => {
-    res.render("products/index");
+    res.render("products/index.ejs");
 })
 app.get("/products/product/", (req, res) => {
-    res.render("products/product/product");
+    res.render("products/product/product.ejs");
 })
 
 
