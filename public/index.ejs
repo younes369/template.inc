@@ -8,30 +8,13 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/utillities.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="container maxw">
-        <div class="logo">
-          <h1>
-            <a href="./index.html">template<span>.store</span></a>
-          </h1>
-        </div>
-        <div class="navbar">
-          <ul>
-            <li><a class="navlink" href="./index.html">Home</a></li>
-            <li>
-              <a class="navlink" href="./customers/index.html">Customers</a>
-            </li>
-            <li><a class="navlink" href="./products/index.html">Products</a></li>
-            <li><a class="navlink" href="#">Receipt</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <%- include('./partials/header'); %>
 
     <section class="middle maxw ma">
       <div class="container">
-        <a href="./customers/index.html">
+        <a href="/customers/">
           <div class="card">
             <div class="icon">
               <img src="./assets/homepage/customersIcon.svg" alt="customers" />
@@ -41,7 +24,7 @@
             </div>
           </div>
         </a>
-        <a href="./products/index.html">
+        <a href="/products/">
           <div class="card">
             <div class="icon">
               <img src="./assets/homepage/productIcon.svg" alt="products" />
@@ -64,17 +47,6 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="ma maxw container">
-        <div class="logo">
-          <h1>
-            <a href="./index.html">template<span>.store</span></a>
-          </h1>
-        </div>
-        <div class="copyrightText">
-          <h3>Copyright 2021</h3>
-        </div>
-      </div>
-    </footer>
+    <%- include('./partials/footer'); %>
   </body>
 </html>
