@@ -1,13 +1,21 @@
 const express = require("express");
 const app = express();
+
+app.set("view engine", "ejs");
+app.set("views", "./public");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    console.log("Get on root");
-    res.sendFile("./public/index.html");
+    res.render("index");
 })
 
+app.get("/customers/", (req, res) => {
+    res.render("customers/index");
+})
 
+app.get("/products/", (req, res) => {
+    res.render("products/index");
+})
 
 app.listen(8000);
 console.log("Listening on port 8000");

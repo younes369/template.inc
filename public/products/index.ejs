@@ -7,34 +7,13 @@
     <title>products</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="../css/utillities.css" />
-    <script
-      src="https://kit.fontawesome.com/yourcode.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container maxw">
-        <div class="logo">
-          <h1>
-            <a href="../index.html">template<span>.store</span></a>
-          </h1>
-        </div>
-        <div class="navbar">
-          <ul>
-            <li><a class="navlink" href="../index.html">Home</a></li>
-            <li>
-              <a class="navlink" href="../customers/index.html">Customers</a>
-            </li>
-            <li><a class="navlink" href="#">Products</a></li>
-            <li><a class="navlink" href="#">Receipt</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <%- include('../partials/header'); %>
+
     <section class="middle">
       <div class="idp maxw">
-        <a href="../products/index.html">
+        <a href="/products/">
           <span class="icon"
             ><img src="../assets/svgs/products.svg" alt="customers"
           /></span>
@@ -63,15 +42,7 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="ma maxw">
-        <div class="logo">
-          <h1>
-            <a href="./index.html">template<span>.store</span></a>
-          </h1>
-        </div>
-      </div>
-    </footer>
+    <%- include('../partials/footer'); %>
 
     <script src="./product.js"></script>
   </body>
