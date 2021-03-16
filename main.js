@@ -9,19 +9,22 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 })
 
-app.get("/customers/", (req, res) => {
+app.get("/customers", (req, res) => {
     res.render("customers/index.ejs");
 })
 
-app.get("/customers/customer/", (req, res) => {
-    res.render("customers/customer/customer.ejs");
+//TODO: serve data to ejs from db
+app.get("/customers/customer", (req, res) => {
+    res.render("customers/customer.ejs");
 })
 
-app.get("/products/", (req, res) => {
+app.get("/products", (req, res) => {
     res.render("products/index.ejs");
 })
-app.get("/products/product/", (req, res) => {
-    res.render("products/product/product.ejs");
+
+//TODO: serve data to ejs from db
+app.get("/products/product", (req, res) => {
+    res.render("products/product.ejs");
 })
 
 
