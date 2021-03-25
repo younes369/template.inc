@@ -18,31 +18,30 @@
 
 /*page identification area*/
 .idp {
-  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 130px;
   margin: auto;
   padding-top: 50px;
   padding-left: 50px;
-  position: relative;
-  margin-bottom: 2rem;
+  padding-right: 50px;
+  margin-bottom: 1vh;
 }
 .icon {
   display: block;
-  justify-items: center;
+  align-items: center;
   height: 100%;
-  width: 90%;
 }
 .icon img {
-  width: 270px;
+  width: 250px;
 }
 .search {
-  bottom: 30%;
-  left: 80%;
-  position: absolute;
   display: flex;
 }
 .search button {
   width: 60px;
+
   border: none;
   border-radius: 4px;
   background-color: white;
@@ -55,50 +54,61 @@
   border: none;
   border-radius: 4px;
   width: 170px;
-  height: 30px;
+  height: 10px;
   padding: 10px;
 }
-
-/*hero/products area*/
+/*hero/customers area*/
 .hero {
-  align-content: center;
-  padding: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  row-gap: 20px;
   column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .customer {
-  overflow: hidden;
-  position: relative;
+  min-height: 350px;
+  display: grid;
   justify-content: center;
-  align-content: center;
-  padding: 30px 30px;
-  height: 300px;
+  align-items: center;
+  grid-template-rows: repeat(auto-fit);
+  padding: 10px;
+  height: 90%;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  background-color: white;
   overflow: visible;
 }
-.main-img img {
-  width: 250px;
-  max-height: 200px;
-  border-radius: 8px;
-  object-fit: scale-down;
-  object-position: 50% 50%;
-  image-resolution: inherit;
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 250px;
+    max-height: 200px;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    margin-top: 20px;
+    image-resolution: inherit;
+    border-radius: 10px;
+  }
 }
+
 .text {
-  position: absolute;
-  bottom: 30px;
-  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
 }
+
 .remove {
   display: none;
   position: absolute;
-  right: 290px;
-  bottom: 280px;
+  left: -15px;
+  top: -15px;
   background-color: red;
   border-radius: 50%;
   height: 35px;
@@ -106,6 +116,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .remove img {
   width: 30px;
   margin: 2.5px 2.5px;

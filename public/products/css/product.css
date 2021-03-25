@@ -9,35 +9,33 @@
 
 /*page identification area*/
 .idp {
-  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 130px;
   margin: auto;
   padding-top: 50px;
   padding-left: 50px;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .icon {
   display: block;
   justify-items: center;
-  height: 100%;
-  width: 90%;
 }
 
 .icon img {
-  width: 270px;
+  width: 250px;
 }
 
 .search {
-  bottom: 30%;
-  left: 80%;
-  position: absolute;
   display: flex;
 }
 
 .search button {
   width: 60px;
+  height: 30px;
   border: none;
   border-radius: 4px;
   background-color: white;
@@ -51,39 +49,34 @@
   border: none;
   border-radius: 4px;
   width: 170px;
-  height: 30px;
+  height: 10px;
   padding: 10px;
 }
 
 /*card*/
 .middle .container {
   display: grid;
-  grid-template-columns: 30% 60%;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  align-items: center;
+  grid-template-columns: minmax(300px, 400px) minmax(600px, 800px);
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
 }
 .middle .container .product {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-rows: 70% 20%;
-  grid-template-columns: repeat(1, 100%);
-  row-gap: 10%;
-  padding: 6% 10px;
-  min-height: 100%;
+  height: 100%;
+  padding: 10px;
   border-radius: 10px;
   background-color: white;
-  overflow: visible;
 }
 .middle .container .product .main-img {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .middle .container .product .main-img img {
-  width: 90%;
-  max-height: 100%;
-  border-radius: 10px;
+  width: 80%;
+  border-radius: 20px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
   -o-object-position: 50% 50%;
@@ -93,9 +86,8 @@
 .middle .container .product .text {
   display: flex;
   justify-content: center;
-  align-content: center;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .middle .container .product .text a {
   font-size: 1rem;
@@ -141,7 +133,7 @@
   color: var(--secondary-color);
 }
 .middle table {
-  width: 1400px;
+  width: 90vw;
   margin: 40px 50px;
   border-collapse: collapse;
   box-shadow: 5px 5px 10px #a8a8a8, -5px -5px 10px #a8a8a8;
