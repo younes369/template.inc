@@ -1,31 +1,30 @@
 const express = require("express");
 const app = express();
+const mongoose = require("mongoose");
+const Product = require("./models/products");
+const Customer = require('./models/customers');
+const productRouter = require("./routs/products");
+const customerRouter = require("./routs/customers");
 
+
+
+mongoose.connect("mongodb://localhost/test2",{useNewUrlParser: true,useUnifiedTopology: true });
 app.set("view engine", "ejs");
 app.set("views", "./public");
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }))
+
 
 app.get("/", (req, res) => {
     res.render("index.ejs");
 })
 
-app.get("/customers", (req, res) => {
-    res.render("customers/index.ejs");
-})
 
-//TODO: serve data to ejs from db
-app.get("/customers/customer", (req, res) => {
-    res.render("customers/customer.ejs");
-})
 
-app.get("/products", (req, res) => {
-    res.render("products/index.ejs");
-})
+app.use("/products",productRouter)
 
-//TODO: serve data to ejs from db
-app.get("/products/product", (req, res) => {
-    res.render("products/product.ejs");
-})
+app.use("/customers",customerRouter)
+
 
 
 app.listen(8000);

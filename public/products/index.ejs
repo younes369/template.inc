@@ -24,20 +24,24 @@
       </div>
       <div class="maxw ma">
         <div class="hero">
+          <% products.forEach(product => { %>
           <div class="product">
             <span class="remove">
               <img src="../assets/svgs/remove.svg" alt="" />
             </span>
             <div class="main-img">
               <img
-                src="../assets/Iván_el_Terrible_y_su_hijo,_por_Iliá_Repin.jpg"
+                src="../assets/svgs/raw svgs/iconmonstr-picture-10.svg"
                 alt=""
               />
             </div>
             <div class="text">
-              <h3><a href="#">product name</a></h3>
+              <h3>
+                <a href="./<%= product.id %>"><%= product.productName %></a>
+              </h3>
             </div>
           </div>
+          <% }) %>
         </div>
       </div>
     </section>

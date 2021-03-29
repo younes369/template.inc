@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+:root {
+  --primary-color: #6b6bff;
+  --secondary-color: #19197b;
+  --light-color: #f2f2f2;
+}
+
+.middle .container {
+  grid-template-columns: 400px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.middle section {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle section form {
+  width: 80vw;
+}
+.middle section form label {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+}
+.middle section form br {
+  display: block;
+  height: 20px;
+  width: 100%;
+  content: " ";
+}
+.middle section form input {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 80%;
+  height: 4vh;
+  margin: auto;
+}
+.middle section form button {
+  font-size: 1.2rem;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--secondary-color);
+  font-weight: 400;
+  cursor: pointer;
+}/*# sourceMappingURL=new.css.map */
